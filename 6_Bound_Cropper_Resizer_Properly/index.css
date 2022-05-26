@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.Wrapper_Container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e4fdfa;
+    height: 200vh;
+    /* width: 200%; */
+}
+
+.Main_Container{
+    margin-top: 200px;
+    height: 600px;
+    max-width: 100%;
+    width: 400px;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    padding: 5px;
+    /* position: relative; */
+    background-color: #ffe1e1;
+}
+.Mover_Wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Mover_Wrapper::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.Content{
+    height: 300px;
+    width: 200px;
+    background-color: transparent;
+    position: absolute;
+    outline-style: solid;
+    outline-color: #36363662;
+    outline-width: 200vw;
+}
+.tensile{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* background-color: cyan; */
+}
+.Pointer{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+}
+
+.R{
+    height: 100%;
+    width: 1px;
+    right: -1px;
+    border-right: 1px dashed #3fb37f;
+}
+.B{
+    width: 100%;
+    bottom: -1px;
+    height: 1px;
+    border-bottom: 1px dashed #3fb37f;
+
+}
+.L {
+    height: 100%;
+    width: 1px;
+    left: -1px;
+    border-left: 1px dashed #3fb37f;
+}
+.T{
+    width: 100%;
+    height: 1px;
+    top: -1px;
+    border-top: 1px dashed #3fb37f;
+}
+
+.mover{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #acff2f85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+.mover::before{
+    content: "";
+    position: absolute;
+    background-color: green;
+    height: 10px;
+    width: 10px;
+}
+.e{
+    left: calc(100% - 15px);
+    top: calc(50% - 15px);
+}
+.se{
+    left: calc(100% - 15px);
+    top: calc(100% - 15px);
+}
+.s{
+    left: calc(50% - 15px);
+    top: calc(100% - 15px);
+}
+.sw{
+    left:  -15px;
+    top: calc(100% - 15px);
+}
+.w{
+    left:  -15px;
+    top: calc(50% - 15px);
+}
+.nw{
+    left:  -15px;
+    top: -15px;
+}
+.n{
+    left:  calc(50% - 15px);
+    top: -15px;
+}
+.ne{
+    left:  calc(100% - 15px);
+    top: -15px;
+}

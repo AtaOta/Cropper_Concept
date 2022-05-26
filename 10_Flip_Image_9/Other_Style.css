@@ -1,0 +1,20 @@
+.button_Container{
+    height: auto;
+    width: 380px;
+    max-width: 95%;
+    padding: 5px;
+    padding-top: 0px;
+    background-color: #160909;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    align-content: center;
+}
+.button_Container button{
+    height: 30px;
+    border: none;
+    background-color: #27242498;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

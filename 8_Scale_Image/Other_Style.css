@@ -1,0 +1,12 @@
+.button_Container{
+    height: auto;
+    width: 420px;
+    padding: 5px;
+    background-color: #000000e5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.button_Container button{
+    height: 30px;
+    background-color: #fff;
+}
